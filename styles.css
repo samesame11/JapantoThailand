@@ -1,0 +1,93 @@
+#bar{
+ background-color: #B41A14;
+ height: fit-content;
+}
+
+#slide {
+    background-color: #B41A14;
+    height: fit-content;
+    padding-top:  10px;
+    padding-bottom: 10px;
+}
+
+
+#Yahoo {
+    background-color: rgb(223, 130, 130);
+    height: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+#howtoorder {
+padding-top: 5px;
+padding-bottom: 5px;
+}
+
+#contact {
+padding-top: 5px;
+padding-bottom: 5px;
+background-color: #B41A14;
+}
+
+#positionContact {
+    text-align: center;
+    width: fit-content;
+}
+
+#carouselExampleIndicators {
+    width: 200px;
+    height: 300px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#carousel-inner {
+    width: 300%;
+    height: 400px;
+}
+
+
+#hellotext {
+    padding-top: 3%;
+    font-family: 'Caveat';
+    color: white;
+    text-align: center;
+    
+}
+
+img {
+   object-fit: cover;
+   width: 150px;
+   height: 300px;
+   border-radius: 8px;
+}
+
+a {
+    color: azure;
+}
+
+a:hover {
+    color: white;
+}
+
+.nav-item {
+    width: fit-content;
+}
+
+h3 {
+    font-size: 2.25em;
+    text-align: center;
+    font-family: 'Caveat';
+}
+
+
+  h1{
+    color: white;
+    font-size: 2.25em;
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    text-shadow: 0px 2px 0px rgba(0, 0, 0, 1);
+  }
