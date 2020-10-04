@@ -151,7 +151,89 @@ p {
     font-size: 15px;
     font-family: 'Sarabun', sans-serif;
 }
+
 ul.a {
     list-style-type: circle;
-  }
+}
 
+.ChatBtn {
+    color: rgb(75, 193, 240);
+    padding-bottom: 20px;
+    font-size: 80px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 23px;
+    right: 28px;
+    border: none;
+    z-index: 100;
+    width: fit-content;
+    -webkit-transform: scaleX(-1);
+    transform: scaleX(-1);
+    background-color: transparent;
+ }
+
+ .ChatBtn:focus {
+     outline: none;
+ }
+
+ .openChat {
+    display: none;
+    background-color: white;
+    position: fixed;
+    bottom: 140px;
+    right: 15px;
+    border-color: transparent;
+    border: solid whitesmoke 1px;
+    border-radius: 18px;
+    z-index: 9;
+
+ }
+ .openChatBtn:focus {
+    
+    border-color: transparent;
+ }
+ form {
+    max-width: 250px;
+    padding: 10px;
+    border-color: transparent;
+    font-family: 'Caveat';
+ }
+ form textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 15px;
+    border: none;
+    border-radius: 5px;
+    background: #d5e7ff;
+    color: rgb(0, 0, 0);
+    resize: none;
+ }
+ form textarea:focus {
+    background-color: rgb(219, 255, 252);
+    outline: none;
+ }
+ form .btn {
+    background-color: rgb(34, 197, 107);
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 48%;
+    opacity: 0.8;
+    height: fit-content;
+
+ }
+ form .close {
+    background-color: red;
+    height: fit-content;
+    padding-bottom: 12px;
+    text-align: center;
+}
+
+.close:hover {
+    color: white;
+}
+
+#sizeIcon {
+ font-size: small;
+ 
+}
