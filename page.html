@@ -12,9 +12,8 @@
   <link rel="stylesheet" href="dist/style.css">
   <script src="dist/index.min.js"></script>
   <!-- Bootstrap JS -->
-  <script src="myscripts.js"></script>
   <link href="https://cdn.lineicons.com/2.0/LineIcons.css" rel="stylesheet">
-
+  <script type="text/javascript" src="myscripts.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Caveat">
   <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
@@ -75,7 +74,15 @@
       <h3>Welcome to JapantoThailand</h3>
     </div>
   </div>
-
+  <button class="ChatBtn" onclick="openForm()"><i class="fa fa-commenting" aria-hidden="true"></i></button>
+  <div class="openChat" onfocusout="closeForm()">
+    <form >
+      <label for="msg"><b>Message</b></label>
+      <textarea id="textChat" placeholder="Type message.." name="msg" required></textarea>
+      <button type="submit" class="btn"><i id="sizeIcon" class="fa fa-paper-plane" aria-hidden="true"></i></button>
+      <button type="button" class="btn close" onclick="closeForm()"><i id="sizeIcon" class="fa fa-times" aria-hidden="true"></i></button>
+    </form>
+  </div>
   <div id="Amazon">
     <div class="container">
       <div class="row">
@@ -252,7 +259,9 @@
     <div class="container">
       <div class="card-deck">
         <div class="card">
-          <img class="card-img-top" src="https://pailin.voicetv.co.th/assets/aW1hZ2UvMjAxOS0wNi9jODEyOTM0N2Y1N2MyYTAyY2RmZTg3NTExMzkyN2Y5NS5qcGc=" alt="Card image cap">
+          <img class="card-img-top"
+            src="https://pailin.voicetv.co.th/assets/aW1hZ2UvMjAxOS0wNi9jODEyOTM0N2Y1N2MyYTAyY2RmZTg3NTExMzkyN2Y5NS5qcGc="
+            alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">ประยุทธ จันทร์โอชา</h5>
             <p class="card-text">สั่งเรือดำน้ำมือสองจากYahooได้ราคาดีมากครับ บริการรวดเร็วทันใจ</p>
@@ -260,15 +269,20 @@
           </div>
         </div>
         <div class="card">
-          <img class="card-img-top" src="https://www.thailandstack.com/wp-content/uploads/app/d74ce4c0-95c8-11ea-9e7e-d156ad46b160.jpg" alt="Card image cap">
+          <img class="card-img-top"
+            src="https://www.thailandstack.com/wp-content/uploads/app/d74ce4c0-95c8-11ea-9e7e-d156ad46b160.jpg"
+            alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">ประวิตร วงษ์สุวรรณ</h5>
-            <p class="card-text">ใช้บริการPreorderนาฬิกาRolexกับที่นี่ราคาถูกกว่าที่ยืมเพื่อนมา ส่งไวนาฬิกาไม่มีรอยเลยแต่จอแตก</p>
+            <p class="card-text">ใช้บริการPreorderนาฬิกาRolexกับที่นี่ราคาถูกกว่าที่ยืมเพื่อนมา
+              ส่งไวนาฬิกาไม่มีรอยเลยแต่จอแตก</p>
             <p class="card-text"><small class="text-muted">Last updated 4 days ago</small></p>
           </div>
         </div>
         <div class="card">
-          <img class="card-img-top" src="https://static.posttoday.com/media/content/2020/04/28/107B6FC93B9E444061959DB79AA79D09.jpg" alt="Card image cap">
+          <img class="card-img-top"
+            src="https://static.posttoday.com/media/content/2020/04/28/107B6FC93B9E444061959DB79AA79D09.jpg"
+            alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">ปารีณา ไกรคุปต์</h5>
             <p class="card-text">เคยใช้บริการสั่งของเล่นจากอะเมซอน ราคาไม่แพงสินค้าใหญ่ คุณภาพดีมากคะ</p>
@@ -278,7 +292,6 @@
       </div>
     </div>
   </div>
-
   <div class="container-fluid">
     <div class="row m-2">
       <div class="col-sm-6">
@@ -289,17 +302,17 @@
         <br><b>JapantoThailand</b>
       </div>
       <div>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-          integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-          crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-          integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-          crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-          integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-          crossorigin="anonymous"></script>
-        <script src="carousel.js"></script>
-
+      </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+      <script src="carousel.js"></script>
 </body>
 
 </html>
